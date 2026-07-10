@@ -42,6 +42,10 @@ Podés abonar al repartidor o coordinar el pago por este medio.
 Gracias.`
 }
 
+export function crearMensajeClienteInactivo(cliente: Cliente) {
+  return `Hola, ${cliente.nombre}. ¿Cómo estás? Te escribimos de Agüita. Hace varios meses que no registramos entregas y queríamos coordinar la devolución de los envases que puedan haber quedado en tu domicilio. Cuando tengas un momento, escribinos y coordinamos. ¡Muchas gracias!`
+}
+
 export function crearUrlWhatsApp(telefono: string, mensaje: string) {
   const numero = prepararTelefonoWhatsApp(telefono)
   if (!numero) return ""
